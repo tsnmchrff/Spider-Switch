@@ -8,19 +8,20 @@
   </head>
   <body>
     <div id="container">
-      <audio src="music.mp3"></audio>
+      <audio id="myAudio" controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
       <div class="fond">
         <div id="rainContainer"></div>
         <audio id=""></audio>
         <!-- Conteneur pour les gouttes -->
         <!-- Bouton de départ -->
         <div class="button_begin" id="startButton">Click space to start</div>
-        <a href="fight.html"
-          ><div class="button_fight hidden">Passer au combat</div></a
-        >
-        <div class="venommm"></div>
-        <!-- Les buildings -->
+
         <div class="building_duo">
+          <div class="venommm"></div>
+          <!-- Les buildings -->
           <div class="rod_left"></div>
           <div class="rod_right"></div>
         </div>

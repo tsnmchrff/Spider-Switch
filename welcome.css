@@ -40,9 +40,9 @@
 }
 
 .spider-switch {
-  width: 100px; /* Largeur du rectangle bleu */
+  width: 100%; /* Largeur du rectangle bleu */
   height: 40px; /* Hauteur du rectangle bleu */
-  background-color: blue;
+  background: blue;
   text-align: center;
   color: white;
   font-size: 12px;
@@ -61,6 +61,13 @@
 .spider-switch:hover {
   background-color: yellow;
   cursor: pointer;
+}
+.spider-switch a {
+  text-decoration: none;
+  color: inherit;
+}
+.spider-switch a:visited {
+  color: inherit;
 }
 
 .SM_web {
@@ -91,18 +98,6 @@
   bottom: 0;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 50px; /* Espacement entre les boutons */
-}
-
 .menu_icon {
   width: 75px;
   height: 75px;
@@ -114,17 +109,6 @@
   box-shadow: none; /* Suppression de l'ombre rouge externe */
   transition: all 0.3s ease;
   text-decoration: none;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  gap: 55px; /* Augmenté légèrement pour un meilleur espacement */
 }
 
 .menu {
@@ -175,6 +159,7 @@
 
 .comics {
   background-image: url("img/icon_book.png");
+  background-repeat: no-repeat;
 }
 
 .about {

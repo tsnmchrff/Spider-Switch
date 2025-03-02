@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const spiderweb = document.getElementById("spiderweb");
   const rodLeft = document.querySelector(".rod_left");
   const rodRight = document.querySelector(".rod_right");
+  const audio = document.getElementById("myAudio");
+  const playButton = document.getElementById("audioPlay");
+
+  let isPlaying = false;
+  let rainInterval;
 
   let positionBuildingDuo = 0;
   const speedBuildingDuo = 0.4;
@@ -29,6 +34,22 @@ document.addEventListener("DOMContentLoaded", function () {
       positionBuildingDuo += speedBuildingDuo;
       if (positionBuildingDuo >= 1360) {
         console.log("Arrêt de l'animation de Spider-Man !");
+        if (positionBuildingDuo >= 1360) {
+          console.log("Arrêt de l'animation de Spider-Man !");
+
+          // Stop la pluie
+          clearInterval(rainInterval);
+          document.getElementById("rainContainer").innerHTML = ""; // Vide le conteneur de pluie
+
+          // Cache la toile d'araignée
+          spiderweb.style.display = "none";
+
+          // Affiche le curseur de la souris
+          document.body.style.cursor = "default";
+
+          return;
+        }
+
         spiderman.src = "img/SM_climb_left_static.png";
         // Affichage de la div lorsqu'il s'arrête
         document.querySelector(".game_end").classList.add("visible");
@@ -198,8 +219,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  setInterval(() => {
-    createRaindrops(10);
+  rainInterval = setInterval(() => {
+    createRaindrops(3);
     checkCollision(spiderman, document.querySelectorAll(".raindrop"));
   }, 1500);
 
@@ -226,5 +247,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   document.addEventListener("click", function (event) {
     console.log("Spider-Man X:", spiderman.offsetLeft); //pour voir où Spider-Man se positionne lorsqu'il bouge
+  });
+  playButton.addEventListener("click", function () {
+    if (isPlaying) {
+      audio.pause();
+      playButton.textContent = "▶️ Jouer la musique";
+    } else {
+      audio.play();
+      playButton.textContent = "⏸️ Pause";
+    }
+    isPlaying = !isPlaying;
+  });
+
+  // Quand la musique s'arrête, remettre le bouton en "Jouer"
+  audio.addEventListener("ended", function () {
+    playButton.textContent = "▶️ Jouer la musique";
+    isPlaying = false;
   });
 });

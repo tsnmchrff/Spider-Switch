@@ -13,8 +13,4 @@ base {
     left: 0px;
     overflow: hidden;
   }
-  /*background: linear-gradient(
-        rgba(61, 161, 177, 1) 50%,
-        rgba(26, 68, 75, 1) 100%
-      ); */ /*dégradé linéaire*/
 }

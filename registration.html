@@ -7,25 +7,48 @@
     <link rel="stylesheet" href="registration.css" />
   </head>
   <body>
-    <div class="base"></div>
-    <div class="e-mail">
-      <input type="email" required placeholder="e-mail" />
-    </div>
-    <!--required rend le champ obligatoire avant soumission-->
-    <!--minlength="x" maxlength="x"-->
-    <div class="password">
-      <input type="password" required placeholder="Mot de passe" />
-    </div>
-    <div class="age">
-      <input type="date" required placeholder="jj/mm/aaaa" />
-    </div>
-    <!--<span class="e-mail_text">e-mail</span
+    <div class="base">
+      <form id="registrationForm" action="registration.php" method="POST">
+        <div class="e-mail">
+          <input
+            type="email"
+            name="email"
+            id="emailInput"
+            required
+            placeholder="e-mail"
+          />
+        </div>
+
+        <div class="password">
+          <input
+            type="password"
+            name="password"
+            id="passwordInput"
+            required
+            placeholder="Mot de passe"
+          />
+        </div>
+
+        <div class="age">
+          <input
+            type="date"
+            name="birthdate"
+            id="birthdateInput"
+            required
+            placeholder="jj/mm/aaaa"
+          />
+        </div>
+
+        <button type="submit" id="submitBtn">S'inscrire</button>
+      </form>
+      <!--<span class="e-mail_text">e-mail</span
     ><span class="password_text">password</span
     ><span class="age_text">age</span>-->
-    <div class="blue_band"></div>
-    <div class="Marvel_Logo_SM"></div>
-    <div class="spiderweb_arc"></div>
-    <div class="Spiderman4_movie"></div>
-    <script src="registration.js"></script>
+      <div class="blue_band"></div>
+      <div class="Marvel_Logo_SM"></div>
+      <div class="spiderweb_arc"></div>
+      <div class="Spiderman4_movie"></div>
+      <script src="registration.js"></script>
+    </div>
   </body>
 </html>
