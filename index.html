@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spider-Switch</title>
+  </head>
+  <body>
+    <div id="container">
+      <audio src="music.mp3"></audio>
+      <div class="fond">
+        <div id="rainContainer"></div>
+        <audio id=""></audio>
+        <!-- Conteneur pour les gouttes -->
+        <!-- Bouton de départ -->
+        <div class="button_begin" id="startButton">Click space to start</div>
+        <a href="fight.html"
+          ><div class="button_fight hidden">Passer au combat</div></a
+        >
+        <div class="venommm"></div>
+        <!-- Les buildings -->
+        <div class="building_duo">
+          <div class="rod_left"></div>
+          <div class="rod_right"></div>
+        </div>
+        <div id="spiderweb"></div>
+        <!-- Élément Spider-Man qui bouge -->
+        <div class="sm_climb_left"></div>
+      </div>
+      <div class="score"><span id="score">0</span></div>
+    </div>
+
+    <!-- Lien vers le script -->
+    <script src="script.js"></script>
+  </body>
+</html>

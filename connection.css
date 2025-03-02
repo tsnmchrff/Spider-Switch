@@ -1,0 +1,148 @@
+.base {
+  background: radial-gradient(
+    circle,
+    rgba(61, 161, 177, 1) 50%,
+    rgba(26, 68, 75, 1) 100%
+  );
+  width: 100%;
+  height: 1547px;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.blue_band {
+  width: 100%;
+  height: 421px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(2, 6, 238, 1));
+  opacity: 1;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.Marvel_Logo_SM {
+  width: 100%;
+  height: 299px;
+  background: url("img/Marvel_Logo_SM.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 221px;
+  left: 0px; /*145px;*/
+  overflow: hidden;
+}
+
+.toile_center {
+  position: absolute;
+  width: 1366px;
+  height: 1200px;
+  top: 581px;
+  left: 9px;
+  background: url("img/spiderweb_center.png") no-repeat;
+  /*background-repeat: no-repeat;*/
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.button_duo {
+  width: 796px;
+  position: absolute;
+  font-size: 30px;
+  color: rgba(15, 29, 83, 1);
+  display: flex;
+  justify-content: space-between;
+  top: 699px;
+  left: 285px;
+}
+
+.connection,
+.disconnect {
+  width: 257px;
+  height: 101px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center; /* Centre le texte horizontalement */
+  align-items: center; /* Centre le texte verticalement */
+  top: 50%;
+  border-radius: 10px;
+}
+.connection,
+.disconnect:hover {
+  cursor: pointer;
+}
+
+.connection {
+  color: rgba(15, 29, 83, 1);
+  box-shadow: -24px 16px 4px 0px rgba(0, 0, 0, 0.25);
+  top: 699px;
+  left: 285px;
+}
+
+.disconnect {
+  box-shadow: 24px 16px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Le volet est caché par défaut */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Juste en dessous de .connection */
+  left: 0;
+  width: 240px; /* Même largeur que .connection */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  text-align: center;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Options du menu déroulant */
+input {
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(15, 29, 83, 0.1);
+  border-radius: 5px;
+}
+
+input:hover {
+  background: rgba(15, 29, 83, 0.3);
+  cursor: text;
+}
+
+/* Classe pour afficher le volet */
+.dropdown-content.active {
+  display: block;
+  max-height: 200px;
+}
+
+.SM_retro {
+  position: absolute;
+  width: 480.99px; /*300px*/
+  height: 594.91px;
+  top: 800px;
+  left: 500px; /*50%;*/ /*636.07px;*/
+  background: url("img/SM_retro.png") no-repeat;
+  /*background-size: 300px;*/
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+  transform: rotate(33.24deg);
+  transition: transform 0.9s ease-in-out;
+}
+.SM_retro:hover {
+  transform: rotate(180deg); /* Rotation de 90 degrés au survol */
+  cursor: pointer;
+  transition: transform 0.9s ease-in-out;
+}

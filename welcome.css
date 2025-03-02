@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: /*7126px;*/ 100vh;
+  background: linear-gradient(#1f1d2e 10%, #2f566b 50%, #336d85 100%);
+  opacity: 1;
+  /*position: relative;  clé pour positionner .floor par rapport à .container */
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Marvel {
+  width: 166.11px; /* Largeur fixe */
+  height: 101px; /* Hauteur fixe */
+  position: absolute;
+  top: 20px; /* Ajuste la position en haut */
+  left: 20px; /* Ajuste la position à gauche */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Marvel_logo {
+  position: absolute;
+  width: 270px;
+  height: 100%;
+  background-image: url("img/Marvel_Logo.png"); /* Image en arrière-plan */
+  background-size: cover; /* Ajuste l'image */
+  background-position: center;
+  display: block;
+  left: 10px;
+}
+
+.spider-switch {
+  width: 100px; /* Largeur du rectangle bleu */
+  height: 40px; /* Hauteur du rectangle bleu */
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  bottom: -20px; /* Ajuste pour qu'il dépasse sous l'image */
+  left: 100%;
+  transform: translateX(-50%) rotate(-10deg); /* Centre et incline */
+  border: 2px solid white; /* Bordure blanche */
+  font-family: Inter, sans ms;
+  font-weight: Bold;
+  font-size: 15px;
+}
+.spider-switch:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.SM_web {
+  position: absolute; /* Permet de placer l'image où on veut */
+  width: 400px;
+  height: 520px;
+  top: -4px; /* Ajuste la hauteur pour bien placer Spider-Man */
+  left: 140px; /* Ajuste la position vers la gauche */
+  background-image: url("img/SM_web.png");
+  background-size: contain; /* Assure que l'image s'affiche correctement */
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 5; /* S'assure que l'image est bien au-dessus des autres éléments */
+}
+
+.building {
+  background: url("img/building_align.png");
+  z-index: 10;
+}
+
+.floor {
+  width: 100%; /*1366px*/
+  height: 60px;
+  background-color: rgba(31, 29, 46, 1);
+  box-shadow: 0 -5px 100px 85px rgba(230, 49, 72, 0.8),
+    /*Ombre extérieur*/ inset 0 12px 15.6px 4px #2f566b; /*Ombre intérieur*/
+  position: absolute; /* pour utiliser bottom: 0 */
+  bottom: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 50px; /* Espacement entre les boutons */
+}
+
+.menu_icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #77ecfa 20%, #2f566b 80%);
+  box-shadow: none; /* Suppression de l'ombre rouge externe */
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 55px; /* Augmenté légèrement pour un meilleur espacement */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 55px; /* Augmenté légèrement pour un meilleur espacement */
+}
+
+.menu_icon {
+  width: 70px; /* Taille légèrement réduite */
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #77ecfa 30%, #2f566b 90%);
+
+  /* Ombre plus réduite pour éviter l’arc */
+  box-shadow: 0px 0px 12px 3px rgba(230, 49, 72, 0.4),
+    /* Glow rouge externe réduit */ inset 0px 0px 10px 4px
+      rgba(119, 236, 250, 0.6); /* Glow interne bleu réduit */
+
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Effet au survol */
+.menu_icon:hover {
+  box-shadow: 0px 0px 18px 6px rgba(230, 49, 72, 0.5),
+    /* Glow rouge augmenté */ inset 0px 0px 15px 6px rgba(119, 236, 250, 0.7); /* Glow interne bleu ajusté */
+  transform: scale(1.1);
+}
+
+/* Icônes */
+.settings {
+  background-image: url("img/icon_system.png");
+  z-index: 3;
+}
+
+.trailers {
+  background-image: url("img/icon_treallers.png");
+}
+
+.comics {
+  background-image: url("img/icon_book.png");
+}
+
+.about {
+  background-image: url("img/icon_question.png");
+}
+
+/* Ajustement global des icônes */
+.settings,
+.trailers,
+.comics,
+.about {
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Ajout d'un z-index pour s'assurer que les icônes sont visibles */
+.menu_icon span {
+  z-index: 20;
+}
+
+.button_play {
+  width: 206px;
+  height: 206px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  background: radial-gradient(circle, #77ecfa 20%, #2f566b 80%);
+  box-shadow: 0px 0px 50px 25px #e63148,
+    /* Ombre externe rouge */ inset 0px 20px 16.5px -8px rgba(255, 255, 255, 1),
+    /* Ombre interne blanche */ inset 0px 0px 70px 30px #77ecfa; /* Lumière interne bleue */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-family: "Jomhuria", sans-serif !important;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: -3px 3px 5px #e63048, /* Ombre rouge */ 3px -3px 5px #77ecfa; /* Ombre cyan */
+  margin: 0; /* Supprime les marges par défaut */
+}
+.button_play:hover {
+  cursor: pointer;
+  width: 212px;
+  height: 215px;
+}
+.login {
+  position: absolute;
+  top: 20px; /* Distance depuis le haut */
+  right: 20px; /* Distance depuis la droite */
+
+  padding: 20px 50px; /* Augmenté pour doubler la taille */
+  font-size: 23px; /* Texte plus grand */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(to bottom, #77ecfa, #2f566b); /* Dégradé bleu */
+  border: none;
+  border-radius: 50px; /* Ajusté pour garder un ovale */
+
+  box-shadow: 0px 0px 40px 20px rgba(119, 236, 250, 0.6); /* Glow plus large */
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login:hover {
+  box-shadow: 0px 0px 50px 30px rgba(119, 236, 250, 0.8); /* Glow plus intense */
+  transform: scale(1.05); /* Effet de zoom */
+}
+
+.six_buildings {
+  position: absolute;
+  width: 100%; /*1273px;*/
+  height: 612px;
+  background-image: url("img/building_align.png");
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: 57px;
+  top: 186px;
+  background-color: transparent;
+}
