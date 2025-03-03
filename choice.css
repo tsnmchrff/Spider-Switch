@@ -1,0 +1,443 @@
+.blue_band {
+  width: 100%;
+  height: 421px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(2, 6, 238, 1));
+  opacity: 1;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.Marvel_Logo_SM {
+  width: 100%;
+  height: 299px;
+  background: url("img/Marvel_Logo_SM.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 221px;
+  left: 0px; /*145px;*/
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  height: 4146px;
+  background: linear-gradient(rgba(15, 29, 83, 1), rgba(0, 0, 0, 1));
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.Trealers_epics {
+  width: 134px;
+  color: rgba(15, 29, 83, 1);
+  position: absolute;
+  top: 57px;
+  left: 644px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.Comics {
+  width: 134px;
+  color: rgba(15, 29, 83, 1);
+  position: absolute;
+  top: 69px;
+  left: 906px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.About {
+  width: 134px;
+  color: rgba(15, 29, 83, 1);
+  position: absolute;
+  top: 61px;
+  left: 1168px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.system {
+  width: 134px;
+  color: rgba(15, 29, 83, 1);
+  position: absolute;
+  top: 69px;
+  left: 382px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.v337_1245 {
+  width: 100%;
+  height: 421px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(2, 6, 238, 1));
+  opacity: 1;
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.play_fight {
+  width: 610px;
+  height: 403px;
+  background: url("img/play_fight.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1366px;
+  left: 711px;
+  overflow: hidden;
+}
+.building_background_choice {
+  width: 562px;
+  height: 975px;
+  background: url("img/building_background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 794px;
+  left: 107px;
+  overflow: hidden;
+}
+.building_background_choice:hover {
+  border: blue;
+}
+.building_left_right-remove {
+  width: 559px;
+  height: 100%;
+  background: url("img/building_left_right-remove.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1130px;
+  left: 106px;
+  overflow: hidden;
+}
+.SM_climb_left_choice {
+  width: 33px;
+  height: 97px;
+  background: url("img/SM_climb_left.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1672px;
+  left: 203px;
+  overflow: hidden;
+}
+.venommm_choice {
+  width: 110px;
+  height: 85px;
+  background: url("img/venommm.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1099px;
+  left: 546px;
+  overflow: hidden;
+}
+.button_start {
+  width: 142px;
+  height: 61px;
+  background: rgba(217, 217, 217, 0.7);
+  opacity: 1;
+  position: absolute;
+  top: 1617px;
+  left: 314px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.button_letter {
+  width: 117px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 1640px;
+  left: 330px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.Tutoriel {
+  width: 235px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 1924px;
+  left: 560px;
+  font-family: Convergence;
+  font-weight: Regular;
+  font-size: 64px;
+  opacity: 1;
+  text-align: left;
+}
+.SM_idk {
+  width: 195px;
+  height: 160px;
+  background: url("img/SM_idk.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2142px;
+  left: 231px;
+  overflow: hidden;
+}
+.Tuto_switch {
+  width: 969px;
+  height: 516px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 2301px;
+  left: 173px;
+  overflow: hidden;
+}
+.keyboard_switch {
+  width: 447px;
+  height: 129px;
+  background: url("img/keyboard.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2628px;
+  left: 231px;
+  overflow: hidden;
+}
+
+.push_space {
+  width: 133px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 2381px;
+  left: 799px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.building_background_tuto {
+  width: 163px;
+  height: 284px;
+  background: url("img/building_background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2328px;
+  left: 344px;
+  overflow: hidden;
+}
+.base_fight {
+  width: 969px;
+  height: 516px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 3232px;
+  left: 185px;
+  overflow: hidden;
+}
+.keyboard_fight {
+  width: 447px;
+  height: 129px;
+  background: url("img/keyboard.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 3559px;
+  left: 243px;
+  overflow: hidden;
+}
+
+.click {
+  width: 317px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 2456px;
+  left: 799px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.help {
+  width: 317px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 2544px;
+  left: 799px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.push {
+  width: 294px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 2638px;
+  left: 799px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+.play_fight_tuto {
+  width: 484px;
+  height: 235px;
+  background: url("img/play_fight.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 3286px;
+  left: 213px;
+  overflow: hidden;
+}
+.spider-switch_title {
+  width: 355px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2222px;
+  left: 787px;
+  font-family: Convergence;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: left;
+}
+.spider-fight_title {
+  width: 355px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 3159px;
+  left: 799px;
+  font-family: Convergence;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: left;
+}
+.big_building_preview {
+  width: 85px;
+  height: 269px;
+  background: url("img/big_building-preview.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2354px;
+  left: 328px;
+  overflow: hidden;
+}
+.SM_climb_left_tuto {
+  width: 11px;
+  height: 32px;
+  background: url("img/SM_climb_left.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2569px;
+  left: 391px;
+  overflow: hidden;
+}
+.machine_game {
+  width: 284px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 3381px;
+  left: 799px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.space_fight {
+  width: 261px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 3512px;
+  left: 799px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.choice_your_play {
+  width: 385px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 763px;
+  left: 837px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+.SM_ovni {
+  width: 426px;
+  height: 408px;
+  background: url("img/SM_ovni.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 878px;
+  left: 787px;
+  overflow: hidden;
+}

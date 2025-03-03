@@ -9,13 +9,17 @@
   <body>
     <div class="base">
       <div class="toile_center"></div>
-      <a href="index.html"><div class="SM_retro"></div></a>
+      <a href="choice.html"><div class="SM_retro"></div></a>
       <div class="button_duo">
         <div class="connection">Connecter</div>
         <div class="dropdown">
           <div class="dropdown-content">
-            <input type="email" required placeholder="@e-mail" />
-            <input type="password" required placeholer="Mot de passe" />
+            <form id="loginForm" action="login.php" method="POST">
+              <input type="email" required placeholder="@e-mail" />
+              <input type="password" required placeholer="Mot de passe" />
+              <button type="submit" style="display: none"></button>
+              <!-- Permet d'appuyer sur Entrée -->
+            </form>
           </div>
         </div>
 

@@ -95,33 +95,6 @@ body {
   cursor: pointer;
 }
 
-.button_fight {
-  width: 426px;
-  height: 181px;
-  border-radius: 30px;
-  background-color: rgba(217, 217, 217, 0.6);
-  font-size: 36px;
-  color: rgba(23, 19, 45, 1);
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease-out, visibility 1s ease-out;
-} /*Cela rendra la div cachée au début et la fera apparaître progressivement.*/
-
-.button_fight.visible {
-  opacity: 1;
-  visibility: visible;
-}
-.button_fight:hover {
-  cursor: pointer;
-}
-
 .sm_climb_left {
   background-image: url("img/SM_climb_left.gif"); /* image statique */
   width: 64px;
@@ -161,15 +134,25 @@ body {
   }
 }
 .venommm {
-  position: absolute;
+  position: relative;
   background-image: url("img/venommm.gif");
   background-size: contain; /* Ajuste l’image pour qu’elle soit visible en entier */
   background-repeat: no-repeat; /* Empêche la répétition de l’image */
   background-position: center; /* Centre l’image */
   width: 220px; /* Augmenté légèrement pour mieux l'afficher */
   height: 180px; /* Ajusté pour garder un bon ratio */
-  top: 50px;
-  right: 3px;
+  top: 200px;
+  right: 0px;
+  z-index: 5;
+}
+a {
+  display: block;
+  width: fit-content; /* Ajuste la largeur en fonction du contenu */
+  height: fit-content; /* Ajuste la hauteur en fonction du contenu */
+}
+.venommm:hover {
+  cursor: pointer;
+  background: url("fight.html");
 }
 .score {
   font-size: 24px;
@@ -178,4 +161,24 @@ body {
   z-index: index 5;
   top: 0px;
   left: 0px;
+}
+#audioContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#audioPlay {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#audioPlay:hover {
+  background-color: #d63b00;
 }
